@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    width: 250px;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__official {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: $white;
+    text-align: center;
+    span {
+      display: block;
+      margin-top: 16px;
+      font-size: 18px;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__phone {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: $white;
+    transition: all 0.6s ease;
+    &:hover {
+      text-decoration: none;
+      color: rgb(243, 177, 177);
+      transform: scale(1.05);
+    }
+  }
+  &__button {
+    margin-top: 8px;
+  }
+}
