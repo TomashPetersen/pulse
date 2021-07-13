@@ -3,10 +3,12 @@
   padding: 100px 0 92px 0;
   background: url("../img/bg/consultation-bg.png") center center/cover no-repeat;
   &__descr {
+    margin-top: 30px;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     color: $white;
-    text-align-last: left;
+    text-align: left;
+    margin-bottom: 36px;
   }
 }
