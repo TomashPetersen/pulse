@@ -1,0 +1,106 @@
+.catalog {
+  padding: 0 0 100px 0;
+  &__tabs {
+    margin-top: 70px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  &__tab {
+    width: 222px;
+    height: 52px;
+    border: 2px solid #d0d0d0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    text-align: center;
+    transform: skewX(-25deg);
+    margin: 0 5px;
+    transition: all 0.6s ease;
+    div {
+      transform: skewX(25deg);
+    }
+    &_active {
+      color: $white;
+      background-color: $red;
+      border: none;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 10px $red;
+      border: none;
+    }
+  }
+  &__content {
+    margin-top: 60px;
+  }
+  &-item {
+    width: 303px;
+    min-height: 442px;
+    background: $white;
+    border: 2px solid #e8e8e8;
+    padding: 20px 20px 26px 20px;
+    &__img {
+      max-width: 100%;
+      height: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+    &__title {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      color: $black;
+    }
+    &__descr {
+      margin-top: 16px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: $black;
+    }
+    &__link {
+      display: block;
+      margin-top: 17px;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: $red;
+      text-align: center;
+      &:hover {
+        color: $red;
+      }
+    }
+    hr {
+      background-color: #e8e8e8;
+      margin-top: 19px;
+      margin-bottom: 21px;
+      border-bottom: none;
+    }
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__old-price {
+      font-weight: 300;
+      font-size: 14px;
+      text-decoration-line: line-through;
+      color: #555555;
+    }
+    &__price {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: #050505;
+    }
+  }
+}
