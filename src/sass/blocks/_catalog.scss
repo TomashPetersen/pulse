@@ -40,7 +40,6 @@
   &__content {
     display: none;
     margin-top: 60px;
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     &_active {
@@ -171,9 +170,9 @@
       text-decoration: underline;
       text-transform: uppercase;
       color: $red;
-    }
-    &:hover {
-      color: $red;
+      &:hover {
+        color: $red;
+      }
     }
   }
 }
