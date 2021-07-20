@@ -38,10 +38,14 @@
     }
   }
   &__content {
+    display: none;
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    &_active {
+      display: flex;
+    }
   }
   &-item {
     position: relative;
