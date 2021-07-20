@@ -82,6 +82,7 @@
       text-decoration-line: underline;
       color: $red;
       text-align: center;
+      text-transform: uppercase;
       &:hover {
         color: $red;
       }
@@ -157,14 +158,17 @@
     }
     &__back {
       position: absolute;
-      left: 110px;
-      top: 318px;
+      left: 50%;
+      bottom: 0px;
+      transform: translateX(calc(-50% - 10px));
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      text-align: center;
       text-decoration: underline;
       text-transform: uppercase;
+      color: $red;
+    }
+    &:hover {
       color: $red;
     }
   }
