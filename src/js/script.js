@@ -27,6 +27,13 @@ const slider = tns({
   autoplay: false,
   controls: false,
   nav: false,
+  responsive: {
+    992: {},
+    320: {
+      nav: true,
+      controls: true,
+    },
+  },
 });
 
 document.querySelector(".prev").addEventListener("click", function () {

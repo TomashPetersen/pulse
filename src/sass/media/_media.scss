@@ -1,3 +1,15 @@
+@media (min-width: 1201px) {
+  .carousel {
+    .prev {
+      left: -100px;
+    }
+
+    .next {
+      right: -100px;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 900px;
@@ -9,6 +21,30 @@
     &__descr {
       font-size: 13px;
     }
+  }
+
+  .carousel {
+    .carousel__inner {
+      img {
+        width: 700px;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+    }
+
+    .prev {
+      left: -50px;
+    }
+
+    .next {
+      right: -50px;
+    }
+  }
+
+  .catalog-item {
+    width: 290px;
   }
 }
 
@@ -111,6 +147,24 @@
 
   .feed-form {
     margin: 0 auto;
+  }
+
+  .nav-dots {
+    display: flex;
+    padding: 0;
+    position: absolute;
+    z-index: 100;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    &__item {
+      display: block;
+      margin-right: 5px;
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      color: #000;
+    }
   }
 }
 
