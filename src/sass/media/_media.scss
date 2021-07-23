@@ -149,6 +149,25 @@
     margin: 0 auto;
   }
 
+  .carousel {
+    .container {
+      width: 700px;
+      .carousel-inner {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .prev {
+    display: none;
+  }
+
+  .next {
+    display: none;
+  }
+
   .nav-dots {
     display: flex;
     padding: 0;

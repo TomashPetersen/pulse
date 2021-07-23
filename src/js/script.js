@@ -29,10 +29,6 @@ const slider = tns({
   nav: false,
   responsive: {
     992: {},
-    320: {
-      nav: true,
-      controls: true,
-    },
   },
 });
 
