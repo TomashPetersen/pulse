@@ -26,7 +26,7 @@
   .carousel {
     .carousel__inner {
       img {
-        width: 700px;
+        width: 100%;
       }
     }
 
@@ -156,7 +156,7 @@
       .tns-nav {
         position: absolute;
         z-index: 150;
-        top: -60px;
+        top: -50px;
         left: 50%;
         transform: translateX(-50%);
         button {
@@ -260,6 +260,16 @@
     &__descr {
       font-size: 11px;
       margin-top: 15px;
+    }
+  }
+
+  .carousel {
+    padding: 65px 0px 40px;
+    .container {
+      width: 500px;
+      .tns-nav {
+        top: -40px;
+      }
     }
   }
 }
@@ -377,6 +387,20 @@
   .button {
     &_submit {
       font-size: 15px;
+    }
+  }
+
+  .carousel {
+    padding: 50px 0px 30px;
+    .container {
+      width: 310px;
+      .tns-nav {
+        top: -40px;
+        button {
+          padding: 3px;
+          margin-right: 3px;
+        }
+      }
     }
   }
 }
