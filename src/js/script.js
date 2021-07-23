@@ -28,7 +28,12 @@ const slider = tns({
   controls: false,
   nav: false,
   responsive: {
-    992: {},
+    992: {
+      nav: false,
+    },
+    320: {
+      nav: true,
+    },
   },
 });
 
@@ -40,62 +45,39 @@ document.querySelector(".next").addEventListener("click", function () {
   slider.goTo("next");
 });
 
-document
-  .querySelector(".nav-dots__item_0")
-  .addEventListener("click", function (e) {
-    slider.goTo("0");
-    if (
-      !document
-        .querySelector(".nav-dots__item_0")
-        .classList.contains("nav-dots__item_active")
-    ) {
-      for (let sibling of document.querySelector(".nav-dots__item_0").parentNode
-        .children) {
-        sibling.classList.remove("nav-dots__item_active");
-      }
+// function togglerNavDots(item, listItem) {
+//   document.querySelector(item).addEventListener("click", function (e) {
+//     slider.goTo(listItem);
+//     if (
+//       !document.querySelector(item).classList.contains("nav-dots__item_active")
+//     ) {
+//       for (let sibling of document.querySelector(item).parentNode.children) {
+//         sibling.classList.remove("nav-dots__item_active");
+//       }
 
-      document
-        .querySelector(".nav-dots__item_0")
-        .classList.toggle("nav-dots__item_active");
-    }
-  });
+//       document.querySelector(item).classList.toggle("nav-dots__item_active");
+//     }
+//   });
+// }
 
-document
-  .querySelector(".nav-dots__item_1")
-  .addEventListener("click", function (e) {
-    slider.goTo("1");
-    if (
-      !document
-        .querySelector(".nav-dots__item_1")
-        .classList.contains("nav-dots__item_active")
-    ) {
-      for (let sibling of document.querySelector(".nav-dots__item_1").parentNode
-        .children) {
-        sibling.classList.remove("nav-dots__item_active");
-      }
+// togglerNavDots(".nav-dots__item_0", "0");
+// togglerNavDots(".nav-dots__item_1", "1");
+// togglerNavDots(".nav-dots__item_2", "2");
 
-      document
-        .querySelector(".nav-dots__item_1")
-        .classList.toggle("nav-dots__item_active");
-    }
-  });
+// function navDotsTogglerByRemoteSlide(sliderActiveId, navDotActiveClass) {
+//   if (
+//     document
+//       .querySelector(sliderActiveId)
+//       .classList.contains("tns-slide-active")
+//   ) {
+//     for (let sibling of document.querySelector(navDotActiveClass).parentNode
+//       .children) {
+//       sibling.classList.remove("nav-dots__item_active");
+//     }
+//     document
+//       .querySelector(navDotActiveClass)
+//       .classList.toggle("nav-dots__item_active");
+//   }
+// }
 
-document
-  .querySelector(".nav-dots__item_2")
-  .addEventListener("click", function (e) {
-    slider.goTo("2");
-    if (
-      !document
-        .querySelector(".nav-dots__item_2")
-        .classList.contains("nav-dots__item_active")
-    ) {
-      for (let sibling of document.querySelector(".nav-dots__item_2").parentNode
-        .children) {
-        sibling.classList.remove("nav-dots__item_active");
-      }
-
-      document
-        .querySelector(".nav-dots__item_2")
-        .classList.toggle("nav-dots__item_active");
-    }
-  });
+// navDotsTogglerByRemoteSlide("#tns1-item0", ".nav-dots__item_0");
