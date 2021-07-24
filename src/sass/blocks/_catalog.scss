@@ -42,6 +42,12 @@
     margin-top: 60px;
     justify-content: space-between;
     flex-wrap: wrap;
+    &:last-child {
+      justify-content: flex-start;
+      .catalog-item {
+        margin-right: 15px;
+      }
+    }
     &_active {
       display: flex;
     }
