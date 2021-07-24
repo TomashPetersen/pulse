@@ -218,6 +218,15 @@
       }
     }
   }
+
+  .clients {
+    padding: 60px 0px 30px 0px;
+    &__text {
+      padding-right: 40px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -332,6 +341,18 @@
 
   .catalog__content:last-child .catalog-item {
     margin-right: 0px;
+  }
+
+  .clients {
+    padding: 60px 0px 30px 0px;
+    &__text {
+      padding-right: 10px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__img-box {
+      padding-left: 20px;
+    }
   }
 }
 
@@ -481,6 +502,29 @@
     &__tab {
       width: 300px;
       margin-bottom: 5px;
+    }
+  }
+
+  .clients {
+    padding: 50px 0px 30px 0px;
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+    }
+    &__text {
+      padding-right: 0px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__img-box {
+      padding-left: 0px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    &__feedback {
+      flex-direction: column;
     }
   }
 }
