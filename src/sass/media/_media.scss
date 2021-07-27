@@ -394,6 +394,17 @@
       }
     }
   }
+
+  .modal {
+    padding: 35px 35px 35px 35px;
+    width: 370px;
+    .feed-form {
+      width: 280px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -589,6 +600,22 @@
         height: 40px;
         margin: 0 10px;
       }
+    }
+  }
+
+  .modal {
+    padding: 25px 25px 25px 25px;
+    width: 300px;
+    .feed-form {
+      width: 250px;
+    }
+    &__subtitle {
+      font-size: 15px;
+    }
+    &__close {
+      right: 8%;
+      transform: translateX(100%);
+      top: -40px;
     }
   }
 }
