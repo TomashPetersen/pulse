@@ -227,6 +227,26 @@
       line-height: 20px;
     }
   }
+
+  .footer {
+    &__address {
+      margin-bottom: 25px;
+    }
+    &__phone {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    &__info {
+      width: 430px;
+      height: 250px;
+      padding: 50px;
+    }
+    &__social {
+      &-item {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -352,6 +372,26 @@
     }
     &__img-box {
       padding-left: 20px;
+    }
+  }
+
+  .footer {
+    &__address {
+      margin-bottom: 20px;
+    }
+    &__phone {
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
+    &__info {
+      width: 400px;
+      height: 210px;
+      padding: 30px;
+    }
+    &__social {
+      &-item {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -525,6 +565,30 @@
     }
     &__feedback {
       flex-direction: column;
+    }
+  }
+
+  .footer {
+    &__address {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+    &__phone {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+    &__info {
+      width: 100%;
+      height: 170px;
+      padding: 20px;
+    }
+    &__social {
+      &-item {
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+      }
     }
   }
 }
