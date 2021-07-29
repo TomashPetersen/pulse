@@ -4,7 +4,7 @@ $(document).ready(function () {
   });
 
   $(".modal__close").on("click", function () {
-    $(".overlay, #comsultation, #thanks-messege, #order").fadeOut("slow");
+    $(".overlay, #comsultation, #thanks-message, #order").fadeOut("slow");
   });
 
   $(".button_mini").each(function (i) {
