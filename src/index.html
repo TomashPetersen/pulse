@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
+    <link rel="stylesheet" href="css/animate.css" />
     <!--[if (lt IE 9)
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script
     ><![endif]-->
@@ -95,7 +96,7 @@
               <img
                 src="img/icons/advantages/heart.svg"
                 alt="Сердце"
-                class="advantages__img"
+                class="advantages__img advantages__img_animated"
               />
             </div>
             <div class="advantages__title">Заботимся о здоровье</div>
@@ -565,7 +566,11 @@
         <h2 class="title">отзывы клиентов</h2>
 
         <div class="clients__wrapper">
-          <div class="clients__feedback">
+          <div
+            class="clients__feedback animate__animated animate__fadeInUp wow"
+            data-wow-duration="1s"
+            data-wow-delay="1s"
+          >
             <div class="clients__img-box">
               <img
                 src="img/content/feedback/feedback-1.png"
@@ -589,7 +594,11 @@
             </div>
           </div>
 
-          <div class="clients__feedback">
+          <div
+            class="clients__feedback animate__animated animate__fadeInUp wow"
+            data-wow-duration="1s"
+            data-wow-delay="1s"
+          >
             <div class="clients__img-box">
               <img
                 src="img/content/feedback/feedback-2.png"
@@ -614,7 +623,11 @@
             </div>
           </div>
 
-          <div class="clients__feedback">
+          <div
+            class="clients__feedback animate__animated animate__fadeInUp wow"
+            data-wow-duration="1s"
+            data-wow-delay="1s"
+          >
             <div class="clients__img-box">
               <img
                 src="img/content/feedback/feedback-3.png"
@@ -731,9 +744,9 @@
     ></script>
     <!-- <script src="js/slick.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/maskedInput.min.js"></script>
+    <script src="js/wow.min.js"></script>
 
     <script src="js/script.js"></script>
 
@@ -748,5 +761,7 @@
     <script src="js/mailer.js"></script>
 
     <script src="js/smoothScroll.js"></script>
+
+    <script src="js/animate.js"></script>
   </body>
 </html>
